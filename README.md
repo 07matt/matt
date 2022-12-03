@@ -15,10 +15,6 @@
 
 <h1>Hi there Stranger</h1>
   
-<h4>Show SMS & Email Slidedown Prompt</h4>
-        <button id="showSmsAndEmailSlidedown">Show SMS & Email Slidedown Prompt</button>
-  <h4>Show Category Slidedown Prompt</h4>
-        <button id="showCategorySlidePrompt">Show Category Slidedown Prompt</button>
-  
+ 
 </body>
 </html>
