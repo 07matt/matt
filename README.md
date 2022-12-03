@@ -1,7 +1,7 @@
 <html>
 <head>
-  <h1>MAXś Shop</h1>
-  <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+  <h1>MAXś Space</h1>
+<!-- <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
 <script>
   window.OneSignal = window.OneSignal || [];
   OneSignal.push(function() {
@@ -9,11 +9,11 @@
       appId: "c2c75dac-54a3-4dca-a96f-706550d855b0",
     });
   });
-</script>
+</script> -->
 </head>
 <body>
 
-<h1>Hello</h1>
+<h1>Hi there Stranger</h1>
 
 </body>
 </html>
