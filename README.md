@@ -1,9 +1,7 @@
 <html>
 <head>
   <h1>MAXś Space</h1>
-
-</head>
-  <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+ <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
 <script>
   window.OneSignal = window.OneSignal || [];
   OneSignal.push(function() {
@@ -12,6 +10,8 @@
     });
   });
 </script>
+</head>
+ 
 <body>
 
 <h1>Hi there Stranger</h1>
