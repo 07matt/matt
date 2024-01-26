@@ -15,7 +15,7 @@
  
 <body>
 
-<h1>Hi there Stranger</h1>
+<h1>Hi Stranger</h1>
   
  
 </body>
