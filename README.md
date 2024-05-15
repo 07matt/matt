@@ -7,13 +7,9 @@
   OneSignalDeferred.push(function(OneSignal) {
     OneSignal.init({
       appId: "f11399dd-e198-41a0-8aae-a2a6e1448ad5",
-      OneSignalDeferred.push(function() {
 OneSignal.login(externalID);
-        });
 console.log('Logged in');
-    OneSignalDeferred.push(function() {
-OneSignal.User.PushSubscription.id; {
-  });
+OneSignal.User.PushSubscription.id; 
 console.log("OneSignal user ID:", userId);
 var settings = {
 "url": "https://api.onesignal.com/apps/f11399dd-e198-41a0-8aae-a2a6e1448ad5/subscriptions/"+ userId +"/user/identity",
