@@ -9,34 +9,7 @@
       appId: "f11399dd-e198-41a0-8aae-a2a6e1448ad5",
     });
   });
-setTimeout(function(){
-console.log("about to initialize OneSignal");
-window._oneSignalInitOptions = {
-promptOptions: {
-slidedown: {
-prompts: [
-{
-type: "push",
-autoPrompt: true,
-text: {
-actionMessage: "Subscribe to Notifications!",
-acceptButton: "Yes",
-cancelButton: "No",
-},
-delay: {
-timeDelay: 1,
-pageViews: 1,
-}
-}
-]
-}
-}
-};
 
-window.OneSignal = window.OneSignal || [];
-window.OneSignal.push(function() {
-window.OneSignal.init(window._oneSignalInitOptions);
-console.log('OneSignal Initialized');
 OneSignal.login("externalID");
 console.log('Logged in');
 OneSignal.User.PushSubscription.id(function(userId) {
