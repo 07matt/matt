@@ -8,8 +8,7 @@
     OneSignal.init({
       appId: "f11399dd-e198-41a0-8aae-a2a6e1448ad5",
     });
-  });
-
+});
 OneSignal.login("externalID");
 console.log('Logged in');
 OneSignal.User.PushSubscription.id(function(userId) {
@@ -19,11 +18,9 @@ var settings = {
 "method": "GET",
 "timeout": 5,
 };
-
 jQuery.ajax(settings).done(function (response) {
 var oneSignalId = response.identity.onesignal_id;
 //console.log(response.identity.onesignal_id);
-
 jQuery('#storeSelect').change(function() {
 var selectedStore = jQuery(this).val();
 updateOneSignalStore(selectedStore, oneSignalId);
@@ -32,18 +29,14 @@ updateOneSignalStore(selectedStore, oneSignalId);
 }).catch((error) => {
 console.error("Error getting OneSignal user ID:", error);
 });
-​
 });
 }, 3000);
-
-
 function updateOneSignalStore(store, onesignalId) {
 var data = {
 'action': 'onesignal_update_tags',
 'onesignalId': onesignalId,
 'storeId': store
 };
-
 jQuery.ajax({
 url: '/wp-admin/admin-ajax.php',
 type: 'POST',
@@ -54,13 +47,8 @@ console.log(response); // Handle the response here
 });
 }
 </script>
- 
 </head>
- 
 <body>
-
 <h1>Hi Stranger</h1>
-  
- 
 </body>
 </html>
