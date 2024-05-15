@@ -7,7 +7,7 @@
   OneSignalDeferred.push(function(OneSignal) {
     OneSignal.init({
       appId: "f11399dd-e198-41a0-8aae-a2a6e1448ad5",
-OneSignal.login("externalID");
+OneSignal.login(function(externalID);
 console.log('Logged in');
 OneSignal.User.PushSubscription.id(function(userId) {
 console.log("OneSignal user ID:", userId);
