@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple OneSignal Integration</title>
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "c727c211-763f-407c-9808-4bd474a306f8",
+    });
+  });
+</script>
+ 
+</head>
+<body>
+  <h1>Welcome to My Website!</h1>
+  <p>Stay updated with notifications from us.</p>
+</body>
+</html>
+
